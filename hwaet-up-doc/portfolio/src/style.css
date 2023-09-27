@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-color: orange;
+    /* border: 1px solid rgb(23, 23, 79); */
+}
+
+/* Try to apply background image in future*/
+body {
+    /* background-image: url("assets/images/Milky-Way-Galaxy copy.jpg"); */
+    background: rgb(18, 2, 43);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    align-items: center;
+    border-top: 5px solid orange;
+    color: gold;
+    background-color: rgb(23, 23, 79);
+}
+
+
+/* Sets the colors of linked/anchored items when unvisited, 
+visited, and hovered over*/
+
+a:link {
+    color: lightgoldenrodyellow;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: orangered; 
+}
+
+h1 {
+    font-size: 75px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-family: fantasy;
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 40px goldenrod, 
+                0 0 15px rgb(241, 130, 20);
+}
+
+nav {
+    display: flex;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.list {
+    margin: 30px;
+}
+
+/*A separate row to individualise its design later on*/
+.subtitle {
+    display: block;
+    text-align: right;
+    border-bottom: 5px solid orange;
+    border-top: 1px dashed gold;
+    font-family: fantasy;
+    color: gold;
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 40px goldenrod, 
+                0 0 15px rgb(241, 130, 20);
+    background-color: rgb(23, 23, 79);
+}
+
+.subtitle h2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+.list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* Formats all main website headers */
+h3 {
+    display: flex;
+    flex: 0 0 21.2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+
+
+main {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+}
+
+main h3 {
+    color: gold;
+    margin-right: 50px;
+    width: 400px;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 45%;
+    border-bottom: 2px solid goldenrod;
+}
+
+.headshot {
+    margin-top: 0px;
+    padding-bottom: 60px;
+    padding: 60px;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 30px;
+    width: 500px;
+    height: auto;
+}
+
+p {
+    margin-top: 20px;
+}
+
+strong {
+    font-style:italic;
+}
+
+.bio {
+    position: block;
+    width: 700px;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    text-align: justify;
+    text-indent: 15px;
+    color: white;
+    line-height: 1.25;
+    background-color:black;
+    border-radius: 20px;
+}
+
+#welcome {
+    padding:50px;
+}
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: 30px;    
+}
+
+.placeholder:hover {
+    opacity: 0.8;
+}
+
+.placeholder {
+    margin: 25px;
+}
+/* Placeholder text edited individually for now, 
+when attempting to edit all text at once since they have the same properties, 
+positioning errors occur */
+.imagetext1 {
+    color:rgb(31, 31, 111);
+    position: absolute;
+    background-color:  rgb(60, 32, 218);
+    color:rgb(23, 23, 79);
+    margin-top: ;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.imagetext2 {
+    position: absolute;
+    padding: 30px;
+    margin-top: 130px;
+    margin-right: 26pc;
+    color: gold;
+    background-color: rgb(32, 32, 135);
+    border-radius: 15px;
+}
+
+.imagetext3 {
+    position: absolute;
+    background-color:  rgb(32, 32, 135);
+    margin-top: 130px;
+    color: gold;
+    padding: 30px;
+    margin-left: 26pc;
+    border-radius: 15px;
+}
+
+.imagetext4 {
+    position: absolute;
+    background-color: rgb(32, 32, 135);
+    color: gold;
+    padding: 30px;
+    margin-top: 130px;
+    margin-right: 26pc;
+    border-radius: 15px;
+}
+
+.imagetext5 {
+    position: absolute;
+    background-color: rgb(32, 32, 135);
+    color: goldenrod;
+    margin-top: 130px;
+    padding: 30px;
+    margin-left: 26pc;
+    border-radius: 15px;
+}
+
+.mainproject {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sideproject {
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+    padding: 20px;
+}
+
+/*formats links leading to videogame social profiles, email link non functional at the moment*/
+.profiles {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    align-items: center;
+    border-top: 5px solid goldenrod;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(23, 23, 79);
+}
+
+.profiles::after {
+    color: orange;
+}
+
+.lefttitle {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 25;
+    color: gold;
+}
+
+.contactlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 0 0 33%;
+    list-style: none;   
+}
+
+/*Edits the properties of the fill out form, 
+titles and text boxes. Form not linked to receive an typed in data, 
+to be done later with Javascript?*/
+.form {
+    display: flex;
+    flex: 0 0 30%;
+}
+
+#form {
+    margin-bottom: 30px;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+
+}
+#pronouns {
+    width: 20%;
+}
+
+.textarea {
+    background-color: rgb(234, 217, 123);
+    font-size: 16px;
+    resize: none;
+}
+.button {
+    color: darkblue;
+    background-color: goldenrod;
+    width: 100px;
+    height: 33px;
+    font-family: fantasy;
+    font-size: large;
+}
+
+.button:hover {
+    background-image: href='/Users/benhwaet/Pictures/Website_href/Classic_Rainbow_Flag.png';
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    align-content: center;
+    font-size: 20px;
+    padding: 30px;
+    border-top: 5px solid;
+    color: goldenrod;
+    background-color: rgb(23, 23, 79);
+}
+
+/* Attempts at changing format when seen on different screen sizes, 
+not yet optimised for phone screens and only somewhat optimized for 
+ipad and smaller laptop screens */
+@media screen and (max-width: 1470px) {
+    header {
+        flex-flow: column wrap;
+    }
+    .headshot img {
+        width: 450px;
+    }
+    .aboutme {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .bio {
+        width:60%;
+    }
+    #projectTitle {
+        margin-left: 30%;
+    }
+    .projects {
+        flex-flow: column wrap;
+    }
+    .imagetext2 {
+       margin-left: -5%;
+    }
+    .imagetext3 {
+        margin-left: 40%;
+     }
+     .imagetext4 {
+        margin-left: -5%;
+     }
+     .imagetext5 {
+        margin-left: 40%;
+     }
+    .profiles {
+        flex-flow: column wrap;
+    }
+    .contactlist {
+        margin: 20px;
+       
+    }
+}  
+
+
+@media screen and (max-width: 900px) {
+    .aboutme {
+        flex-flow: column wrap;
+    }
+    .headshot {
+        width: 600px;
+     }
+     .mainproject {
+        margin-right: 25%;
+     }
+     .placeholder {
+        margin-right: 10%;
+     }
+}
+
+@media screen and (max-width: 768px){
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border-color: orange;
+    }
+    h3 {
+        display: flex;
+        align-content: center;
+
+    }
+        /* { margin: 0;
+        padding: 0;
+        width: 100%;} */
+    
+    .sideproject {
+        flex-direction: column;
+        }
+    #aboutme {
+        margin-left: 50%;
+    }    
+    }
