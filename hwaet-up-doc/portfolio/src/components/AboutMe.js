@@ -1,24 +1,39 @@
 import React from 'react';
-import '../style.css';
+import './style/default.css';
+import avatar from '../images/KingBugs.png';
 
 export default function About() {
     return (
-            <div className="aboutme">
+        <div className="default">
+            <div className="bioContainer">
+                <div className="profilePicture">
+                    <img className="headshot" src={avatar} alt="Bugs Bunny pretending to be a king."
+                        id="avatar" />
+                    <figcaption>
+                        "Hwæt. We Gardena in geardagum, þeodcyninga," <br></br><strong>Beowulf</strong><br></br>
+                        "How we have heard of the might of the kings," <br></br>trans. George Walkden, Ph.D
+                    </figcaption>
+                </div>
                 <h3 id="aboutme">Hwaet About Me?</h3>
-                <p className="bio">
-                    As a Library Assistant, Ben spends his days preparing storytimes and crafts for children, 
-                    and engaging in other exciting library tasks.
-                    He is a big fan of video games, scifi-fantasy novels and interactive fiction, as well as 
-                    books in general. 
-                    Since videogames and library databases fill up much of his life, he thought coding would 
-                    be a way to not only understand these things better, but also build and/or modify them.
-                    Having grown up in the 90s and remembering the fun days of dial-up internet and phones with cords, 
-                    seeing technology grow at an exponential rate has been a fascinating experience. He would like to 
-                    understand <strong>some</strong> of this technology more deeply.
-                    Comfortable with technology and the intenet (though not social media), 
-                    Ben is very much a beginner in terms of coding. He also doesn't speak in the third person 
-                    in real life.<strong id="welcome">Welcome to my first website, it probably shows.</strong>
-                </p>
+                <div className="aboutme">
+                    <h4>Seven Things About Ben</h4>
+                    <p className="bio">
+                        - Library Assistant to children by day, aspiring coder by night.
+                        <br></br>
+                        - Big fan of videogames, literature, RPGs, and interactive storytelling in general.Non-generally, loves sci-fi, fantasy, and worldbuilding.
+                        <br></br>
+                        - Currently learning HTML, CSS, JavaScript, and React via bootcamp.
+                        <br></br>
+                        - Has two mostly useless but fun B.A. degrees in Psychology and English Literatures.
+                        <br></br>
+                        - Would like to learn more about Python, C++, and C#.
+                        <br></br>
+                        - Dreams of restructuring library databases and classifying systems (also creating interactive fiction).
+                        <br></br>
+                        - Has always loved Bugs Bunny.
+                    </p>
+                </div>
             </div>
+        </div>
     );
-    }
+}

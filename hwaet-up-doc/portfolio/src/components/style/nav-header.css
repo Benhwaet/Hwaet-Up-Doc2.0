@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #FF8700;
+    --secondary-color: #30005B;
+    --background-color: #6A7E8D;
+    --modal-overlay-color: #FFA300;
+    --modal-content-background: #1B5777;
+    --modal-box-shadow: 0 0 10px rgba(31, 29, 51, 0.2);
+    }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--background-color);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    align-items: center;
+    border-top: 5px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+    color: var(--modal-overlay-color);
+    background-color: var(--secondary-color);
+}
+
+
+/* Sets the colors of linked/anchored items when unvisited, 
+visited, and hovered over*/
+
+a:link {
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--modal-overlay-color);
+}
+
+a:hover {
+    color: var(--background-color); 
+}
+
+h1 {
+    font-size: 75px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-family: fantasy;
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 40px goldenrod, 
+                0 0 15px rgb(241, 130, 20);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 30px;
+}
