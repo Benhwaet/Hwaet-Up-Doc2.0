@@ -1,0 +1,15 @@
+
+
+.projectCard {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.projectImg {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

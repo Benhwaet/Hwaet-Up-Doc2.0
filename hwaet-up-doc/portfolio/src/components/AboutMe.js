@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/default.css';
+import './style/about.css';
 import avatar from '../images/KingBugs.png';
 
 export default function About() {

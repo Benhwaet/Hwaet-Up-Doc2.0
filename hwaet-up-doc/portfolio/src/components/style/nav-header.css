@@ -14,7 +14,7 @@
 }
 
 body {
-    background: var(--background-color);
+    background: var(--secondary-color);
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
@@ -23,7 +23,6 @@ header {
     justify-content: space-between;
     flex: 0 0 100%;
     align-items: center;
-    border-top: 5px solid var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
     color: var(--modal-overlay-color);
     background-color: var(--secondary-color);
