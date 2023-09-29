@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #FF8700;
+    --secondary-color: #30005B;
+    --background-color: #6A7E8D;
+    --modal-overlay-color: #FFA300;
+    --modal-content-background: #1B5777;
+    --modal-box-shadow: 0 0 10px rgba(31, 29, 51, 0.2);
+    }
+
+.contact {
+    color: var(--primary-color);
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20);
+}

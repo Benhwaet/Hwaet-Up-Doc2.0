@@ -1,6 +1,6 @@
 import React from 'react';
-import './style/about.css';
-import avatar from '../images/KingBugs.png';
+import '../../styles/about.css';
+import avatar from '../../images/KingBugs.png';
 
 export default function About() {
     return (
