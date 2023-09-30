@@ -1,43 +1,93 @@
-import React from "react";
-import { InputGroup, Form } from 'react-bootstrap';
+import React, { useState } from "react";
 import '../../styles/contact.css'
 
-export default function Contact() {
+function ContactForm() {
+    const [username, setUsername] = useState('');
+    const [pronouns, setPronouns] = useState('');
+    const [email, setEmail] = useState('');
+    const [comment, setComment] = useState('');
+
+    const handleInputChange = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+
+        if (inputType === 'username') {
+            setUsername(inputValue);
+        } else if (inputType === 'pronouns') {
+            setPronouns(inputValue);
+        } else if (inputType === 'email') {
+            setEmail(inputValue);
+        } else {
+            setComment(inputValue);
+        }
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(username);
+        console.log(pronouns);
+        console.log(email);
+        console.log(comment);
+
+        setUsername('');
+        setPronouns('');
+        setEmail('');
+        setComment('');
+    }
     return (
-        <div className="contactInfo" style={{ marginTop: "30px"}}>
-            <section className="profiles">
+        <div className="contactInfo" style={{ marginTop: "30px" }}>
                 <h3 className="contact">Contact Me</h3>
-            </section>
-            <div className="formContainer" style={{ display: "flex", justifyContent: "center", margin: "30px" }}>
-                <div className="formBlock" style={{ width: "50%" }}>
-                    <InputGroup className="mb-3">
-                        <Form.Control style={{ width: "25%" }}
+            <div className="formContainer" style={{ display: "flex", justifyContent: "center"}}>
+                <div className="formBlock" style={{ display: "flex", justifyContent: "center" }}>
+                    <form className="mb-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <div>
+                        <input style={{ width: "65%", marginTop: "10px" }}
+                            value={username}
+                            name="username"
+                            onChange={handleInputChange}
+                            type="text"
                             placeholder="Username"
                             aria-label="Username"
                         />
-                        <Form.Control style={{ marginLeft: "10px", width: "5%" }}
+                        <input style={{ marginLeft: "10px", width: "32%", marginTop: "10px" }}
+                            value={pronouns}
+                            name="pronouns"
+                            onChange={handleInputChange}
+                            type="text"
                             placeholder="Pronouns"
                             aria-label="Pronouns"
                         />
-                    </InputGroup>
-
-                    <InputGroup className="mb-3">
-                        <Form.Control
+                        </div>
+                        <input style={{ width: "100%", marginTop: "10px" }}
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
                             type="email"
                             placeholder="Email"
                             aria-label="Email"
                         />
-                    </InputGroup>
-                    <InputGroup style={{ height: "200px" }}>
-                        <InputGroup.Text style={{ width: "120px", display: "flex", overflowBlock: "hidden" }}>Questions, <br></br> Comments?:</InputGroup.Text>
-                        <Form.Control as="commentText" aria-label="Comment Text" />
-                    </InputGroup>
-                    <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
+                        <input style={{ width: "100%", height: "200px", marginTop: "10px", marginBottom: "10px" }}
+                            value={comment}
+                            name="comment"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder="Comment"
+                            as="Comment"
+                            aria-label="Comment Text" />
+                            <div style={{display:"flex", justifyContent:"center" }}>
+                        <button style={{ width: "50%", marginTop: "10px" }}
+                        onClick={handleFormSubmit} 
+                        type="submit" 
+                        class="btn btn-secondary">
+                            Submit</button>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
-
     )
 }
+
+export default ContactForm;

@@ -9,20 +9,20 @@ function Header({currentPage, handlePageChange}) {
             <h1 className="myName">BenHwaet</h1>
             <nav>
                 <ul className="navigation nav">
-                    <li class="list"
+                    <li
                     onClick={() => handlePageChange('About')}
                     className={currentPage === 'About' ? 'nav-link-active' : 'nav-link'}>
                         <a href="#about">Hwaet About Me?</a>
                         </li>
-                    <li class="list"
+                    <li
                     onClick={() => handlePageChange('Projects')}
                     className={currentPage === 'Projects' ? 'nav-link-active' : 'nav-link'}>
                         <a href="#projects">Projects</a></li>
-                    <li class="list"
+                    <li
                     onClick={() => handlePageChange('Contact')}
                     className={currentPage === 'Contact' ? 'nav-link-active' : 'nav-link'}>
                         <a href="#contact">Contact</a></li>
-                    <li class="list"
+                    <li
                     onClick={() => handlePageChange('Resume')}
                     className={currentPage === 'Resume' ? 'nav-link-active' : 'nav-link'}>
                         <a href="#resume">Resume</a></li>

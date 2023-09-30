@@ -11,3 +11,31 @@
     color: var(--primary-color);
     text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20);
 }
+
+input {
+    resize: vertical;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+input:hover {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #ffe3b2;
+}
+
+input[name="comment"] {
+    display: flex;
+    text-align: start;
+}
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
