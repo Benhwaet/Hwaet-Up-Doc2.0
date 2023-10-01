@@ -28,7 +28,7 @@
 
 .projectCard {
     border: 3px solid var(--primary-color);
-    background-color: #ffc35b;
+    background-color: #fff2dc;
     display: flex;
     flex-direction: column;
     justify-content: center;
