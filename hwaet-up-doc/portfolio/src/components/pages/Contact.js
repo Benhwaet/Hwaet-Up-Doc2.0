@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../../styles/contact.css'
+import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
     const [username, setUsername] = useState('');
@@ -26,6 +27,17 @@ function ContactForm() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
+        if (!validateEmail(email) || !username) {
+            alert('Username or email is invalid');
+            return;
+        }
+        if (!comment) {
+            alert('Please leave a comment or question');
+            return;
+        }
+
+        alert(`Thank you for your comment, ${username}!`)
+        
         console.log(username);
         console.log(pronouns);
         console.log(email);
