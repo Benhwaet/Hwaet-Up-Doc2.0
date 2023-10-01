@@ -6,34 +6,35 @@ const projects = [
   {
     title: '{Routed} in Travel',
     description: 'A travel bucket list app that allows users to create a list of places they want to visit and view them on a map. A journal is also available for users to write about their experiences. This app was created in collaboration and is not fully functional.',
-    image: '/portfolio/src/images/projectImgs/RoutedInTravel.png',
+    image: '../../images/projectImgs/RoutedInTravel.png',
     link: 'https://travelbucket-e65592a52fba.herokuapp.com/',
     id: "1"
   },
   {
     title: 'Huzzah Music',
     description: 'This app is a music search list that uses the Spotify API to search for songs and artists. The user can then save their favorite songs to a list. This app was created in collaboration and is not fully functional.',
-    image: ['portfolio/src/images/projectImgs/HuzzahMusicHome.png', 'portfolio/src/images/projectImgs/HuzzahMusic.png'], 
+    image: '../../images/projectImgs/HuzzahMusicHome.png',
     link: 'https://benhwaet.github.io/Huzzah-Music/',
     id: "2"
   },
   {
     title: 'Password Generator',
     description: 'This app allows you to enter the Matrix and create a secure password. The user can choose the length of the password and what characters to include.',
-    image: ['portfolio/src/images/projectImgs/PasswordGen.png', 'portfolio/src/images/projectImgs/PasswordGen2.png'],
+    image: '../../images/projectImgs/PasswordGen.png',
     link: 'https://benhwaet.github.io/Huzzah-Password.Generator/',
     id: "3"
   },
   {
     title: 'Horloge',
     description: 'This app serves as a daily calendar and displays past, current, and future events. The user can save events to the calendar and they will persist on the page.',
+    image: '../../images/projectImgs/Horloge.png',
     link: 'https://benhwaet.github.io/Horloge/',
     id: "4"
   },
   {
     title: 'READ All About It',
     description: 'A back end application that uses Inquirer to ask the user questions about their project. The answers are then used to generate a README.md file.',
-    image: './images/projectImgs/READIt.png',
+    image: '../../images/projectImgs/READIt.png',
     link: 'https://github.com/Benhwaet/READ-All-About-It',
     id: "5"
   },
@@ -67,8 +68,13 @@ export default function ProjectList() {
   )
 
   return (
-    <div>
-      {renderedProjects}
+    <div className="projectPage">
+      <div>
+        <h2 className="pageTitle" style={{ display: "flex", justifyContent: "center", marginTop: "30px"}}>Projects</h2>
+        <div>
+          {renderedProjects}
+        </div>
+      </div>
     </div>
   )
 };

@@ -68,7 +68,7 @@ function ContactForm() {
                             placeholder="Email"
                             aria-label="Email"
                         />
-                        <input style={{ width: "100%", height: "200px", marginTop: "10px", marginBottom: "10px" }}
+                        <input className="commentInput" style={{ width: "100%", height: "200px", marginTop: "10px", marginBottom: "10px" }}
                             value={comment}
                             name="comment"
                             onChange={handleInputChange}

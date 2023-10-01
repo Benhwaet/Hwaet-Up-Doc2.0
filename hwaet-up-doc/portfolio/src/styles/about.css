@@ -25,6 +25,10 @@ h3 {
     font-family: fantasy;
 }
 
+#aboutme {
+    color: var(--primary-color);
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20);
+}
 
 .aboutme {
     display: flex;

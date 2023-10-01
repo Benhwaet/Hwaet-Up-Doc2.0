@@ -30,7 +30,18 @@ input:focus {
 input[name="comment"] {
     display: flex;
     text-align: start;
+    text-overflow: clip;
 }
+
+.commentInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    text-overflow: clip;
+}
+
 button[type="submit"] {
     background-color: var(--primary-color);
     color: var(--secondary-color);

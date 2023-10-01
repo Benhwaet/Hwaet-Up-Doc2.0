@@ -7,9 +7,31 @@
     --modal-box-shadow: 0 0 10px rgba(31, 29, 51, 0.2);
     }
 
-.projectCard, .projectCards {
-    display: flex;
-    align-items: center;
-    background-color: --var(secondary-color);
+.pageTitle {
+    color: var(--primary-color);
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20);
 }
 
+.titleLink {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.projectCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.projectCard {
+    border: 3px solid var(--primary-color);
+    background-color: #ffc35b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
