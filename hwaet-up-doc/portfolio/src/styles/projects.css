@@ -7,7 +7,7 @@
     --modal-box-shadow: 0 0 10px rgba(31, 29, 51, 0.2);
     }
 
-.projectCard {
+.projectCard, .projectCards {
     display: flex;
     align-items: center;
     background-color: --var(secondary-color);
