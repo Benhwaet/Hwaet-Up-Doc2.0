@@ -15,7 +15,7 @@ export default function Footer() {
             </ul>
         </section>
         </div>
-            <h4>That's all folks! Thanks for stopping by &copy; 2023 BenHwaet
+            <h4>That's all folks! &copy; 2023 BenHwaet
             </h4>
         </footer>
         </>

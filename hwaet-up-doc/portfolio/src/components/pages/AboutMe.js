@@ -16,9 +16,9 @@ export default function About() {
                 </div>
                 <h3 id="aboutme">Hwaet About Me?</h3>
                 <div className="aboutme">
-                    <h4>Seven Things About Ben</h4>
+                    <h4 style={{margin: "10px"}}>Seven Things About Ben</h4>
                     <p className="bio">
-                        - Library Assistant to children by day, aspiring coder by night.
+                        - Library Assistant by day, aspiring coder by night.
                         <br></br>
                         - Big fan of videogames, literature, RPGs, and interactive storytelling in general.Non-generally, loves sci-fi, fantasy, and worldbuilding.
                         <br></br>

@@ -49,10 +49,10 @@ const projects = [
 
 export default function ProjectList() {
   const renderedProjects = projects.map(project =>
-    <Row xs={1} md={2} className="g-4 projectCards" key={project} style={{ margin: "30px" }}>
+    <Row xs={1} md={2} className="g-4 projectCards" key={project.id} project={project} style={{ margin: "30px" }}>
       <Col>
         <Card className="projectCard">
-          <Card.Img variant="top" src={projects.image} className="projectImg" />
+          <Card.ImgOverlay variant="top" src={projects.image} className="projectImg" />
           <Card.Body>
             <Card.Title className="title">
               <a className="titleLink"
