@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #FF8700;
+    --secondary-color: #30005B;
+    --background-color: #6A7E8D;
+    --modal-overlay-color: #FFA300;
+    --modal-content-background: #1B5777;
+    --modal-box-shadow: 0 0 10px rgba(31, 29, 51, 0.2);
+    }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    display: flex;
+    flex: 0 0 21.2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+
+#aboutme {
+    color: var(--primary-color);
+    text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20);
+}
+
+.aboutme {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 33%;
+}
+
+.headshot {
+    width: 400px;
+    height: auto;
+}
+
+p, h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    font-style:italic;
+}
+
+.default {
+    display: flex;
+    justify-content: center;
+    }
+
+.bioContainer {
+    position: block;
+    width: 90%;
+    padding: 50px;
+    color: var(--modal-overlay-color);
+    line-height: 1.25;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* text-shadow: 3px 4px 5px rgb(23, 23, 79), 0 0 10px goldenrod, 0 0 10px rgb(241, 130, 20); */
+}
+
+
+/* Attempts at changing format when seen on different screen sizes, 
+not yet optimised for phone screens and only somewhat optimized for 
+ipad and smaller laptop screens */
+@media screen and (max-width: 1470px) {
+    header {
+        flex-flow: column wrap;
+    }
+    .headshot img {
+        width: 450px;
+    }
+    .aboutme {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .bio {
+        width:60%;
+    }
+    #projectTitle {
+        margin-left: 30%;
+    }
+    .projects {
+        flex-flow: column wrap;
+    }
+    .imagetext2 {
+       margin-left: -5%;
+    }
+    .imagetext3 {
+        margin-left: 40%;
+     }
+     .imagetext4 {
+        margin-left: -5%;
+     }
+     .imagetext5 {
+        margin-left: 40%;
+     }
+    .profiles {
+        flex-flow: column wrap;
+    }
+    .contactlist {
+        margin: 20px;
+       
+    }
+}  
+
+
+@media screen and (max-width: 900px) {
+    .aboutme {
+        flex-flow: column wrap;
+    }
+    .headshot {
+        width: 600px;
+     }
+     .mainproject {
+        margin-right: 25%;
+     }
+     .placeholder {
+        margin-right: 10%;
+     }
+}
+
+@media screen and (max-width: 768px){
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border-color: orange;
+    }
+    h3 {
+        display: flex;
+        align-content: center;
+
+    }
+        /* { margin: 0;
+        padding: 0;
+        width: 100%;} */
+    
+    .sideproject {
+        flex-direction: column;
+        }
+    #aboutme {
+        margin-left: 50%;
+    }    
+    }

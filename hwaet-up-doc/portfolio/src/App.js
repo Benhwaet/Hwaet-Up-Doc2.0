@@ -1,15 +1,7 @@
 
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
+import PortfolioContainer from './components/PortfolioContainer';
 
-function Portfolio() {
-  return (
-    <div>
-      
-    </div>
-  );
-}
+const App = () => <PortfolioContainer />;
 
 export default App;
