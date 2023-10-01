@@ -17,7 +17,7 @@ To install this project, clone the repository and run `npm install` to install t
 
 ## Usage
 
-The project can be viewed at [https://hwaet-up-doc.github.io/portfolio/](https://hwaet-up-doc.github.io/portfolio/).
+The project can be viewed at [https://hwaetupdoc-fad18e977f7c.herokuapp.com](https://hwaetupdoc-fad18e977f7c.herokuapp.com). Note that an attempt was made to deploy to github pages, without success. The project is deployed to Heroku instead.
 
 ## Credits
 
