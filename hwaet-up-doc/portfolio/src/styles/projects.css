@@ -13,10 +13,3 @@
     background-color: --var(secondary-color);
 }
 
-.projectImg {
-    width: 25%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 

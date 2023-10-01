@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Validate This!: A Password Regex Tutorial',
     description: 'This is the description for project 3',
-    image: 'portfolio/src/images/projectImgs/RegExGist.png',
+    image: '../../images/projectImgs/RegExGist.png',
     link: 'https://gist.github.com/Benhwaet/148095f583e12c2ebc24da7e701b1950',
     id: "6"
   },
@@ -52,14 +52,14 @@ export default function ProjectList() {
     <Row xs={1} md={2} className="g-4 projectCards" key={project.id} project={project} style={{ margin: "30px" }}>
       <Col>
         <Card className="projectCard">
-          <Card.ImgOverlay variant="top" src={projects.image} className="projectImg" />
+          <Card.Img variant="top" src={project.image} className="projectImg" />
           <Card.Body>
             <Card.Title className="title">
               <a className="titleLink"
-                href={projects.link}>{projects.title}</a>
+                href={project.link}>{project.title}</a>
             </Card.Title>
             <Card.Text className="description">
-              {projects.description}
+              {project.description}
             </Card.Text>
           </Card.Body>
         </Card>
