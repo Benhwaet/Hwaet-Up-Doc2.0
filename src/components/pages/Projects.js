@@ -3,13 +3,22 @@ import { Card, Col, Row } from 'react-bootstrap';
 import '../../styles/projects.css';
 
 const projects = [
+
+  {
+    title: 'Health SensO',
+    description: 'A health app that allows users to track their daily nutritional needs and goals. This app was created in collaboration and is not fully functional.',
+    image: '../../images/projectImgs/RoutedInTravel.png',
+    link: 'https://salty-temple-29543-b70342d34fb8.herokuapp.com/',
+    githublink: 'https://github.com/Benhwaet/HealthSensO',
+    id: "1"
+  },
   {
     title: '{Routed} in Travel',
     description: 'A travel bucket list app that allows users to create a list of places they want to visit and view them on a map. A journal is also available for users to write about their experiences. This app was created in collaboration and is not fully functional.',
     image: '../../images/projectImgs/RoutedInTravel.png',
     link: 'https://travelbucket-e65592a52fba.herokuapp.com/',
     githublink: 'https://github.com/Benhwaet/Travel-BucketList',
-    id: "1"
+    id: "2"
   },
   {
     title: 'Huzzah Music',
@@ -17,7 +26,7 @@ const projects = [
     image: '../../images/projectImgs/HuzzahMusicHome.png',
     link: 'https://benhwaet.github.io/Huzzah-Music/',
     githublink: 'https://github.com/Benhwaet/Huzzah-Music',
-    id: "2"
+    id: "3"
   },
   {
     title: 'Password Generator',
@@ -25,7 +34,7 @@ const projects = [
     image: '../../images/projectImgs/PasswordGen.png',
     link: 'https://benhwaet.github.io/Huzzah-Password.Generator/',
     githublink: 'https://github.com/Benhwaet/Huzzah-Password.Generator',
-    id: "3"
+    id: "4"
   },
   {
     title: 'Horloge',
@@ -33,7 +42,7 @@ const projects = [
     image: '../../images/projectImgs/Horloge.png',
     link: 'https://benhwaet.github.io/Horloge/',
     githublink: 'https://github.com/Benhwaet/Horloge',
-    id: "4"
+    id: "5"
   },
   {
     title: 'READ All About It',
@@ -41,7 +50,7 @@ const projects = [
     image: '../../images/projectImgs/READIt.png',
     link: 'https://github.com/Benhwaet/READ-All-About-It',
     githublink: 'https://github.com/Benhwaet/READ-All-About-It',
-    id: "5"
+    id: "6"
   },
   {
     title: 'Validate This!: A Password Regex Tutorial',
@@ -49,7 +58,7 @@ const projects = [
     image: '../../images/projectImgs/RegExGist.png',
     link: 'https://gist.github.com/Benhwaet/148095f583e12c2ebc24da7e701b1950',
     githublink: 'https://github.com/Benhwaet/Gist-RegEx',
-    id: "6"
+    id: "7"
   },
 ]
 
